@@ -16,8 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }  // MPAndroidChart 여기에만 넣어야 함
     }
 }
+
 
 rootProject.name = "JavaProject"
 include ':app'
