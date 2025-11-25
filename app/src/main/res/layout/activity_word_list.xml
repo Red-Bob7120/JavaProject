@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F6FA">
+
+    <!-- 상단 제목 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="단어장"
+        android:textSize="22sp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:padding="20dp" />
+
+    <!-- 단어 리스트 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerWordList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp" />
+
+    <!-- 바텀바 include -->
+    <include
+        layout="@layout/custom_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+</LinearLayout>

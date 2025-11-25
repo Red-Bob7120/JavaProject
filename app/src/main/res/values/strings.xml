@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JavaProject</string>
+
+    <string name="default_web_client_id">
+        490530030506-h1k2qt9dk06mdsn3uo59egecocm3keds.apps.googleusercontent.com
+    </string>
 </resources>

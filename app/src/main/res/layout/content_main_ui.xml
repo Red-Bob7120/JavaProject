@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF5F6FA">
+
+    <!-- 달력 카드 -->
+    <LinearLayout
+        android:id="@+id/calendarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_calendar_card"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/todayStudyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘 단어 학습: 0개"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <!-- 오늘 학습 통계 카드 -->
+    <LinearLayout
+        android:id="@+id/statsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_calendar_card"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘 학습 통계"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/todayStatsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="아직 준비 중입니다"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>
