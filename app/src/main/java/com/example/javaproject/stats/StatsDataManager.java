@@ -1,4 +1,4 @@
 package com.example.javaproject.stats;
 
-public class StatsDashboardActivity {
+public class StatsDataManager {
 }
